@@ -1,0 +1,12 @@
+services:
+  mediaflow:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - mediaflow-downloads:/app/downloads
+    restart: unless-stopped
+    init: true
+    mem_limit: 2g
+volumes:
+  mediaflow-downloads:

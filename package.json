@@ -1,0 +1,5 @@
+{
+  "name": "mediaflow", "version": "1.0.0", "private": true,
+  "type": "module", "engines": {"node": ">=22"},
+  "scripts": {"start": "node server.mjs", "setup:windows": "node setup-windows.mjs", "test": "node --test", "check": "node --check server.mjs && node --check public/app.js && node --check setup-windows.mjs && node --check launch-windows.mjs"}
+}
